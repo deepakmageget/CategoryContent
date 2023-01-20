@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Mageget\CategoryContent\Block\CustomCateAttribute" name="custom_category_attribute_info" template="Mageget_CategoryContent::cateattrinfo.phtml" after="category_view"/>
+        </referenceContainer>
+        <!-- <referenceContainer name="page.wrapper">
+    <container name="custom.category.image" as="your-custom" label="Your Label Name" htmlTag="div" htmlClass="custom-category-image" htmlId="customcategoryimage" before="main.content">
+         <block class="Mageget\CategoryContent\Block\CustomCateAttribute" name="custom_category_attribute_info" template="Mageget_CategoryContent::cateattrinfo.phtml"/>
+    </container>
+</referenceContainer> -->
+
+    </body>
+</page>
+

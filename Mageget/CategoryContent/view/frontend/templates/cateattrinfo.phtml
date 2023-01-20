@@ -1,0 +1,28 @@
+<?php
+
+$getCurrentCategory = $this->getCurrentCategory();
+    $customCateImage  = $getCurrentCategory->getData('custom_image');
+    $custom_image_url  = $getCurrentCategory->getData('custom_image_url');
+ ?>
+
+
+<a target="_Blank" href="<?= $custom_image_url ; ?>">
+
+<img src="<?= $block->getUrl().$customCateImage ; ?>">
+
+</a>
+
+
+<style>
+      .page-title-wrapper {
+    display: none;
+}  
+
+div#customcategoryimage {
+    padding: 10px 0px;
+}
+.custom-category-image img{
+      width: 100%!important;
+    height: 300px!important;
+}
+</style>
